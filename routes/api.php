@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+///sddsdsds
 Route::get('/rncs', [\App\Http\Controllers\RNCController::class, 'index'])->name('rncs.index');
 Route::get('/rncs/{id}', [\App\Http\Controllers\RNCController::class, 'show'])->name('rncs.show');
 
