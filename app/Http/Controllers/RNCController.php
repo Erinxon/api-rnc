@@ -18,7 +18,7 @@ class RNCController extends Controller
         if(count($rnc) <=0){
             return response()->json([
                 'type of error' => '404',
-                'message'=>'Busqueda invalida!'], 404);
+                'message'=>'RNC INVALIDO'], 404);
         }
         return response()->json($rnc, 200);
     }
