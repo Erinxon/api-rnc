@@ -13,7 +13,6 @@ class CreateRncsTable extends Migration
      */
     public function up()
     {
-
         Schema::create('rncs', function (Blueprint $table) {
             $table->string('rnc_empresa', 250)->primary();
             $table->string('razon_social', 250)->nullable();
